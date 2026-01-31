@@ -7,45 +7,42 @@ export default function Resume() {
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'University Name',
-      period: 'September 2020 - May 2024',
+      degree: 'Bachelor of Science in Computer Science | Economics & Statistics Minors',
+      institution: 'University of Toronto',
+      period: 'September 2024 - May 2028',
       details: [
-        'Relevant coursework: Data Structures, Algorithms, Machine Learning, Database Systems',
-        'GPA: 3.8/4.0',
-        'Dean\'s List: Fall 2021, Spring 2022, Fall 2022'
+        'Relevant coursework: Data Structures & Algorithms, Software Design, Software Tools, Systems Programming',
+        'GPA 3.3 / 4.0',
       ]
     },
     {
-      degree: 'High School Diploma',
-      institution: 'High School Name',
-      period: 'September 2016 - June 2020',
+      degree: 'Ontario Secondary School Diploma',
+      institution: 'Nelson High School',
+      period: 'September 2020 - June 2024',
       details: [
-        'Graduated with honors',
-        'Advanced Placement courses in Computer Science and Mathematics'
+        'GPA 97 / 100',
       ]
     }
   ];
 
   const experience = [
     {
-      title: 'Software Engineer Intern',
-      company: 'Company Name',
-      period: 'June 2023 - August 2023',
+      title: 'Software Instructor',
+      company: 'Ultimate Coders',
+      period: 'June 2025 - September 2025',
       details: [
-        'Developed and maintained web applications using React and Node.js',
-        'Collaborated with cross-functional teams to deliver features on time',
-        'Improved application performance by 30% through code optimization'
+        'Developed and delivered hands-on programming workshops in Python, Java, JavaScript, and C++ for cohorts of 12+ students, emphasizing software design, algorithms, and problem-solving techniques',
+        'Translated complex concepts into clear, structured explanations and documentation, strengthening technical communication skills',
+        'Created reusable code examples, exercises, and technical documentation adopted across multiple cohorts, standardizing workflows and improving instructional consistency'
       ]
     },
     {
-      title: 'Research Assistant',
-      company: 'University Research Lab',
-      period: 'January 2023 - May 2023',
+      title: 'Swim Instructor & Lifeguard',
+      company: 'City of Burlington',
+      period: 'September 2022 - August 2023',
       details: [
-        'Conducted data analysis using Python and statistical methods',
-        'Published findings in university research journal',
-        'Presented research at student conference'
+        'Coordinated daily schedules and team operations for 10+ staff, ensuring smooth execution of programs and compliance with safety protocols',
+        'Implemented and monitored safety procedures, maintaining 100% adherence and minimizing operational incidents',
       ]
     }
   ];
