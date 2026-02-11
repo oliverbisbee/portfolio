@@ -1,3 +1,12 @@
+# Currently Working On
+Working links to projects
+
+Images for Projects
+
+Main Titles Under My Name
+
+Adjusting sizes of certain texts (i.e make technical skills larger)
+
 # Portfolio Website
 
 A modern, responsive portfolio website built with Next.js and TypeScript. This site showcases my projects, experience, and skills as a Computer Science student at the University of Toronto.
