@@ -8,10 +8,14 @@ export default function About() {
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const skills = [
-    { name: 'Python', level: 90 },
-    { name: 'JavaScript/React', level: 85 },
-    { name: 'Data Analysis', level: 80 },
-    { name: 'Machine Learning', level: 75 },
+    { name: 'Python', icon: '🐍' },
+    { name: 'Java', icon: '☕' },
+    { name: 'R', icon: '📊' },
+    { name: 'Git/GitHub', icon: '🔧' },
+    { name: 'Data Structures & Algorithms', icon: '🧮' },
+    { name: 'Software Design', icon: '🏗️' },
+    { name: 'APIs', icon: '🔌' },
+    { name: 'SQL', icon: '🗄️' },
   ];
 
   return (
@@ -32,11 +36,10 @@ export default function About() {
             <div className="flex justify-center">
               <div className="w-64 h-64 bg-gray-300 rounded-full overflow-hidden border-4 border-accent">
                 <Image
-                  src="/profileimage.png"
+                  src="/images/profileimage.png"
                   alt="Profile photo"
                   width={256}
                   height={256}
-                  /*className="object-cover object-[50%-60%] scale-235"*/
                   className="w-full h-full object-cover"
                   style={{ objectPosition: '50% 40%', transform: 'scale(1.93)' }}
                 />
@@ -68,28 +71,17 @@ export default function About() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-4 text-primary">Skills</h4>
-                {skills.map((skill) => (
-                  <div key={skill.name} className="mb-4">
-                    <div className="flex justify-between mb-1">
+                <h4 className="font-semibold mb-4 text-primary">Technical Skills</h4>
+                <div className="grid grid-cols-2 gap-3">
+                  {skills.map((skill) => (
+                    <div key={skill.name} className="flex items-center">
+                      <span className="text-xl mr-2">{skill.icon}</span>
                       <span className="text-sm font-medium text-primary">
                         {skill.name}
                       </span>
-                      <span className="text-sm text-text">
-                        {skill.level}%
-                      </span>
                     </div>
-
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <motion.div
-                        className="bg-accent h-2 rounded-full"
-                        initial={{ width: 0 }}
-                        animate={inView ? { width: `${skill.level}%` } : {}}
-                        transition={{ duration: 1, delay: 0.2 }}
-                      />
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
