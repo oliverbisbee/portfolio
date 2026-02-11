@@ -41,7 +41,7 @@ export default function About() {
                   width={256}
                   height={256}
                   className="w-full h-full object-cover"
-                  style={{ objectPosition: '50% 40%', transform: 'scale(1.93)' }}
+                  style={{ objectPosition: '50% 40%', transform: 'scale(2.5)' }}
                 />
               </div>
             </div>
