@@ -25,7 +25,7 @@ export default function Hero() {
             Oliver Bisbee
           </h1>
           <h2 className="text-2xl md:text-3xl text-white/90 mb-10 font-medium">
-            Software Engineer | Data Scientist | Developer
+            Software Engineer | Data Scientist | CS Student @ UofT
           </h2>
           <div className="flex gap-4 justify-center">
             <a 

@@ -32,8 +32,9 @@ export default function Resume() {
       period: 'June 2025 - September 2025',
       details: [
         'Developed and delivered hands-on programming workshops in Python, Java, JavaScript, and C++ for cohorts of 12+ students, emphasizing software design, algorithms, and problem-solving techniques',
-        'Translated complex concepts into clear, structured explanations and documentation, strengthening technical communication skills',
-        'Created reusable code examples, exercises, and technical documentation adopted across multiple cohorts, standardizing workflows and improving instructional consistency'
+        'Created reusable code examples, exercises, and technical documentation adopted across multiple cohorts, standardizing workflows and improving instructional consistency',
+        'Translated technical concepts into clear, structured explanations and documentation, strengthening technical communication skills',
+        'Led technical workshops in 3D modeling using Onshape, including design optimization and 3D printing'
       ]
     },
     {
@@ -43,6 +44,8 @@ export default function Resume() {
       details: [
         'Coordinated daily schedules and team operations for 10+ staff, ensuring smooth execution of programs and compliance with safety protocols',
         'Implemented and monitored safety procedures, maintaining 100% adherence and minimizing operational incidents',
+        'Analyzed participant performance and provided actionable feedback to optimize learning outcomes and engagement'
+        
       ]
     }
   ];

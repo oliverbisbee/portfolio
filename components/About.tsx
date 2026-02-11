@@ -53,20 +53,35 @@ export default function About() {
               </h3>
 
               <p className="text-text mb-6 leading-relaxed">
-                I'm a second year Computer Science major at the University of Toronto,
-                minoring in Statistics and Economics. I'm a software engineer focused
-                on building practical, high impact systems, with experience in data
-                analysis, machine learning, and web development. I am currently
-                seeking opportunities to apply these skills in real world projects.
+                I'm a second-year Computer Science student at the University of Toronto,
+                minoring in Statistics and Economics. I'm passionate about building practical software solutions, with experience in 
+                software development, data systems, and creating user-focused applications. I enjoy creating systems that solve real-world problems
+                and am eager to apply my technical skills to impactful projects.
               </p>
 
               <div className="mb-6">
-                <h4 className="font-semibold mb-2 text-primary">Profile</h4>
+                <h4 className="font-semibold mb-2 text-primary text-lg">Profile</h4>
+
                 <p className="text-text">
-                  <strong>Email:</strong> oli.bisbee+portfolio@gmail.com
+                  <strong>Email:</strong>{" "}
+                  <a
+                    href="mailto:OliBisbee+Portfolio@gmail.com"
+                    className="text-accent hover:underline"
+                  >
+                    OliBisbee+Portfolio@gmail.com
+                  </a>
                 </p>
+
                 <p className="text-text">
-                  <strong>GitHub:</strong> github.com/oliverbisbee
+                  <strong>GitHub:</strong>{" "}
+                  <a
+                    href="https://github.com/oliverbisbee"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-accent hover:underline"
+                  >
+                    github.com/oliverbisbee
+                  </a>
                 </p>
               </div>
 
@@ -76,7 +91,7 @@ export default function About() {
                   {skills.map((skill) => (
                     <div key={skill.name} className="flex items-center">
                       <span className="text-xl mr-2">{skill.icon}</span>
-                      <span className="text-sm font-medium text-primary">
+                      <span className="text-l font-medium text-primary">
                         {skill.name}
                       </span>
                     </div>

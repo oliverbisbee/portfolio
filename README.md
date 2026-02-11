@@ -1,11 +1,7 @@
 # Currently Working On
-Working links to projects
+Working links to projects (2 more to go)
 
-Images for Projects
-
-Main Titles Under My Name
-
-Adjusting sizes of certain texts (i.e make technical skills larger)
+Images for Projects (2 more to go)
 
 # Portfolio Website
 
