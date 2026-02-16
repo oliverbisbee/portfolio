@@ -26,12 +26,12 @@ export default function Projects() {
       screenshot: '/images/melodymap-screenshot.png'
     },
     {
-      title: 'Project 2',
-      description: 'Description of your second project',
-      fullDescription: 'Detailed description of project 2 goes here. This would include the problem you solved, technologies used, challenges faced, and outcomes achieved.',
-      tech: ['Tech', 'Stack', 'Here'],
-      github: '#',
-      screenshot: '/images/project2.png'
+      title: 'Study Spots Toronto',
+      description: 'Interactive map app helping University of Toronto students find the ideal study space on the St. George campus.',
+      fullDescription: 'StudySpots TO is a full stack web application designed to help UofT students quickly discover and compare study locations across campus. The app features an interactive Google Map centered on the St. George campus with 20+ curated locations including libraries, cafés, academic buildings, and outdoor spaces. Users can filter by location type or T-Card access requirements and click on color coded markers to open a detailed slide out panel with operating hours, floor count, noise level, seating arrangements, and WiFi quality. The project was built with Next.js 16 using the App Router and TypeScript for type safety, Tailwind CSS for a clean responsive UI, and the Google Maps JavaScript API for dynamic map rendering. Key challenges included managing client and server components correctly in Next.js, structuring reusable typed location data, handling environment variables securely for the Maps API, and building a smooth state driven side panel experience. The result is a polished, fast, and intuitive tool tailored specifically to UofT students.',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Google Maps JavaScript API', '@googlemaps/react-wrapper', 'Vercel'],
+      github: 'https://github.com/oliverbisbee/studyspots',
+      screenshot: '/images/Project2StudySpotsScreenshot.png'
     },
     {
       title: 'Project 3',
