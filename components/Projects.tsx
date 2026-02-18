@@ -10,6 +10,7 @@ interface Project {
   tech: string[];
   github: string;
   screenshot?: string;
+  liveUrl?: string;
 }
 
 export default function Projects() {
@@ -28,18 +29,20 @@ export default function Projects() {
     {
       title: 'Study Spots Toronto',
       description: 'Interactive map app helping University of Toronto students find the ideal study space on the St. George campus.',
-      fullDescription: 'StudySpots TO is a full stack web application designed to help UofT students quickly discover and compare study locations across campus. The app features an interactive Google Map centered on the St. George campus with 20+ curated locations including libraries, cafés, academic buildings, and outdoor spaces. Users can filter by location type or T-Card access requirements and click on color coded markers to open a detailed slide out panel with operating hours, floor count, noise level, seating arrangements, and WiFi quality. The project was built with Next.js 16 using the App Router and TypeScript for type safety, Tailwind CSS for a clean responsive UI, and the Google Maps JavaScript API for dynamic map rendering. Key challenges included managing client and server components correctly in Next.js, structuring reusable typed location data, handling environment variables securely for the Maps API, and building a smooth state driven side panel experience. The result is a polished, fast, and intuitive tool tailored specifically to UofT students.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Google Maps JavaScript API', '@googlemaps/react-wrapper', 'Vercel'],
+      fullDescription: 'StudySpots TO is a full stack web application designed to help UofT students quickly discover and compare study locations across campus. The app features an interactive Google Map centered on the St. George campus with 20+ curated locations including libraries, cafés, academic buildings, and outdoor spaces. Users can filter by location type or T-Card access requirements and click on color coded markers to open a detailed slide out panel with operating hours, floor count, noise level, seating arrangements, and WiFi quality. The project was built with Next.js 16 using the App Router and TypeScript for type safety, Tailwind CSS for a clean responsive UI, and the Google Maps JavaScript API for dynamic map rendering. The result is a polished, fast, and intuitive tool tailored specifically to UofT students.',
+      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Google Maps JavaScript API'],
       github: 'https://github.com/oliverbisbee/studyspots',
-      screenshot: '/images/Project2StudySpotsScreenshot.png'
+      screenshot: '/images/Project2StudySpotsScreenshot.png',
+      liveUrl: 'https://studyspotstoronto.vercel.app/',
     },
     {
-      title: 'Project 3',
-      description: 'Description of your third project',
-      fullDescription: 'Detailed description of project 3 goes here. This would include the problem you solved, technologies used, challenges faced, and outcomes achieved.',
-      tech: ['Tech', 'Stack', 'Here'],
-      github: '#',
-      screenshot: '/images/project3.png'
+      title: 'Wellspring Member Engagement Study',
+      description: 'Analyzing how family, gender, and interests affect participation in Wellspring programs.',
+      fullDescription: 'This project examined real member and attendance data from Wellspring, a Canadian cancer support organization, to understand how parenthood, gender, age, and program interests relate to program participation. Using R and statistical methods such as multiple linear regression and hypothesis testing, we analyzed attendance patterns and created visualizations to summarize the results. The study found that membership duration and program interests strongly predict engagement, parents of children under 18 attend fewer services, and the new registration system did not significantly change engagement by gender. Technologies used include R, tidyverse, ggeffects, and Quarto for reveal.js slides.',
+      tech: ['R', 'tidyverse', 'ggeffects', 'Quarto'],
+      github: 'https://github.com/oliverbisbee/wellspring-study',
+      screenshot: '/images/project3screenshot.png',
+      liveUrl: 'https://oliverbisbee.github.io/wellspring-study/#/title-slide',
     },
   ];
 
@@ -159,9 +162,20 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex-1 bg-primary hover:bg-secondary text-white py-3 rounded text-center transition-colors font-medium"
                   >
-                    View on GitHub
+                  View on GitHub
+                </a>
+
+                {selectedProject.liveUrl && (
+                  <a
+                    href={selectedProject.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-orange-500 hover:bg-orange-600 text-white py-3 rounded text-center transition-colors font-medium"
+                  >
+                    Visit Website
                   </a>
-                </div>
+                )}
+              </div>
               </div>
             </motion.div>
           </motion.div>
