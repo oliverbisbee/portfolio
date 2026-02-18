@@ -1,7 +1,8 @@
 # Currently Working On
-Working links to projects (2 more to go)
 
-Images for Projects (2 more to go)
+I’m building a web app that monitors GO Transit train delays in real time and automatically generates pre-filled refund email drafts when a trip exceeds the 15-minute service guarantee threshold. It tracks specific trains commuters subscribe to and alerts them when they’re eligible for compensation, removing the need to manually check and file claims.
+
+This is solely an individual personal project, and is not affiliated with UofT.
 
 # Portfolio Website
 
